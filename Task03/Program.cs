@@ -1,4 +1,11 @@
-﻿Console.WriteLine("Введите число: ");
+﻿// 3. Напишите программу, которая будет выдавать
+// название дня недели по заданному номеру.
+
+//Например:
+// 3 -> Среда
+// 5 -> Пятница
+
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if(number == 1) Console.WriteLine("Понедельник");
 else if(number == 2) Console.WriteLine("Вторник");
