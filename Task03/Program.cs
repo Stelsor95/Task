@@ -5,7 +5,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 
-Console.WriteLine("Введите число: ");
+Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if(number == 1) Console.WriteLine("Понедельник");
 else if(number == 2) Console.WriteLine("Вторник");
