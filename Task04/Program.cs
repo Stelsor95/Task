@@ -3,3 +3,20 @@
 // 2, 3, 7 -> 7
 // 44, 5, 78 -> 78
 // 22, 3, 9 -> 22
+
+Console.Write("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введитн второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите третье число: ");
+int c = Convert.ToInt32(Console.ReadLine());
+
+int Max = a;
+
+if (a > b && a > c);
+
+else if (b > a && b > c) Max = b;
+
+else if (c > a && c > b) Max = c;
+
+Console.WriteLine(Max);
