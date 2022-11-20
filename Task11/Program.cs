@@ -18,4 +18,4 @@ int RemoveSecondDigit(int num)
     return result;
 }
 Console.WriteLine($"Удаляем вторую цифру числа --> {number}");
-Console.WriteLine(RemoveSecondDigit(number));
+Console.WriteLine($"Результат --> {RemoveSecondDigit(number)}");
