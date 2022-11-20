@@ -9,6 +9,7 @@
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int count = -num;
+
 if (num >= 0)
 {
     while (count <= num)
@@ -17,6 +18,7 @@ if (num >= 0)
         count++;
     }
 }
+
 else
 {
     while (count >= num)
