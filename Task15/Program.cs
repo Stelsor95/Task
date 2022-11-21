@@ -9,4 +9,5 @@ Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number == 6 || number == 7) Console.WriteLine("Этот день является выходным");
 else if (number > 7) Console.WriteLine("Такого дня недели нет");
-else Console.WriteLine("Этот день не является выходным");
+else if (number < 1) Console.WriteLine("Ну ты и ебобо, отрицательных дней не бывает");
+else Console.WriteLine("Увы, но это рабочий день!");
