@@ -6,15 +6,35 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = ReadInt("Введите число: ");
+int count = number.ToString().Length;
+Console.Write(MakeArray(number, count));
 
-int FirstDigit(int num)
+int ReadInt(string message)
 {
-    int secondDigit = num % 1000;
-    int result = secondDigit / 100;
-    return result;
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
-if (number > 100) Console.WriteLine($"Третья цифра числа {number} это --> {FirstDigit(number)}");
-else Console.WriteLine($"В числе {number} третьей цифры нет");
+int MakeArray(int a, int b)
+{
+    int result = 0;
+
+    if (b < 3)
+    {
+        Console.Write("Третьей цифры нет, держи: ");
+    }
+
+    else
+    {
+        int c = 1;
+        for (int i = b; i > 3; i--)
+        {
+            c = c * 10;
+        }
+
+        result = (a / c) % 10;
+    }
+
+    return result;
+}
