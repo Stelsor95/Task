@@ -43,16 +43,14 @@ void CheckPalindromicNumber(int num)
             num = num / 10;
             int division2 = (num / 100) % 10;
             int remainder2 = num % 10;
-            if (division2 == remainder2)
-                Console.WriteLine("является палиндромом");
+            if (division2 == remainder2) Console.WriteLine("является палиндромом");
         }
-        else
-            Console.WriteLine("Не является палиндромом");
+
+        else Console.WriteLine("Не является палиндромом");
 
     }
 
-    else
-        Console.WriteLine("Некорректное число!");
+    else Console.WriteLine("Некорректное число!");
 }
 
 CheckPalindromicNumber(number);
