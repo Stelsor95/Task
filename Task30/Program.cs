@@ -14,15 +14,20 @@ void RandomArray(int[] collection)
 
 void PrintArray(int[] col)
 {
+    Console.Write("[");
     for (int position = 0; position < col.Length; position++)
     {
-        Console.Write(col[position] + " ");
+        if (position < col.Length - 1) Console.Write($"{col[position]}, ");
+        else Console.Write($"{col[position]}");
     }
+    Console.Write("]");
+    Console.WriteLine();
 }
 
 Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[size];
 
+PrintArray(array);
 RandomArray(array);
 PrintArray(array);
