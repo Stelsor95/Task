@@ -24,14 +24,18 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
+
+double result = max - min;
+double resRound = Math.Round(result, 2);
+
 Console.WriteLine($"Всего {array.Length} чисел. Максимальное значение = {max}, минимальное значение = {min}");
-Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
+Console.WriteLine($"Разница между максимальным и минимальным значением = {resRound}");
 
 void FillArrayRandomNumbers(double[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
+        arr[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 10;
     }
 }
 
