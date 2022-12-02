@@ -9,7 +9,7 @@ int[] CreatArrayRndint(int siz)
     Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(1, 1000);
+        arr[i] = rnd.Next(100, 1000);
     }
     return arr;
 }
