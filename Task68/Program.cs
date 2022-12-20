@@ -18,8 +18,7 @@ int AckermannFunction(int numM, int numN)
 {
     if (numM == 0) return numN + 1;
     if (numM != 0 && numN == 0) return AckermannFunction(numM - 1, 1);
-    if (numM > 0 && numN > 0) return AckermannFunction(numM - 1, AckermannFunction(numM, numN - 1));
-    return AckermannFunction(numM, numN);
+    return AckermannFunction(numM - 1, AckermannFunction(numM, numN - 1));
 }
 
 Console.WriteLine($"Функция Аккермана для чисел A({numberM},{numberN}) = {AckermannFunction(numberM, numberN)}");
